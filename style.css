@@ -307,30 +307,32 @@ body {
 /* Slider Section */
 .slider-wrapper {
   width: 100%;
-  overflow: hidden;
   height: var(--height);
   padding-top: 12px;
   --width: 417px;
   --height: 236px;
   --quantity: 10;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin-top: 12px;
+  margin-bottom: 56px;
 }
 
 .slider {
   width: 100%;
+  height: var(--height);
   display: flex;
-  position: relative;
+ 
   min-width: calc(var(--width) * var(--quantity));
+  
 }
 
 .slider-item {
-  left: 100%;
-  position: absolute;
+  
   width: var(--width);
   height: var(--height);
-  transition: filter 0.5s;
   background-color: var(--bg-color);
-  animation: slider 60s linear infinite;
-  animation-delay: calc((56.5s / var(--quantity)) * (var(--item) - 6.5));
+  
 }
 
 .slider-content {
@@ -344,21 +346,16 @@ body {
   color: var(--color);
 }
 
-.slider:hover .slider-item {
-  filter: grayscale(1);
-  animation-play-state: paused;
-}
 
-.slider .slider-item:hover {
-  filter: grayscale(0);
-}
 
 .slider-image-small {
   width: 196px;
   height: 196px;
   overflow: hidden;
   margin-left: 15px;
+  
   border-radius: 8px;
+
 }
 
 .slider-image-full {
@@ -372,56 +369,16 @@ body {
   object-fit: cover;
 }
 
-.slider .slider-item:hover {
-  filter: grayscale(0);
-}
 
-.slider-overlay {
-  inset: 0;
-  opacity: 0;
-  display: flex;
-  position: absolute;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.slider-button {
-  opacity: 0;
-  border: none;
-  margin-top: 20px;
-  padding: 7px 15px;
-  border-radius: 999px;
-  background-color: white;
-}
-
-.slider-item:hover .slider-overlay {
-  opacity: 1;
-  transition: all 0.3s ease-in;
-}
-
-.slider-item:hover .slider-button {
-  opacity: 1;
-  margin-top: 0;
-  transition: all 0.3s ease;
-}
 
 .slider-caption {
   left: 15px;
-  bottom: 30px;
-  color: white;
+  bottom: 20px;
+  color: (--color);
   font-weight: bold;
   position: absolute;
-}
+} 
 
-@keyframes slider {
-  from {
-    left: 100%;
-  }
-  to {
-    left: calc(var(--width) * -1);
-  }
-}
 
 @media (max-width: 1024px) {
   /* Header Section */
@@ -557,6 +514,27 @@ body {
   .carousel-slide {
     width: 274px;
     height: 495px;
+  }
+
+  #item1 {
+    background-image: url(images/Assets/disclaimer.jpg);
+  }
+  #item2 {
+    background-image: url(images/Assets/fly-me-to-the-moon-mobile.jpg);
+  }
+  #item3 {
+    background-image: url(images/Assets/shrinking.jpg);
+  }
+  #item4 {
+    background-image: url(images/Assets/blitz.jpg);
+  }
+  #item5 {
+    background-image: url(images/Assets/footballkino.jpg);
+  }
+
+
+  .carousel-info {
+    display: none;
   }
 
 }
