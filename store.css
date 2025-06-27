@@ -168,6 +168,7 @@ body {
     height: 78px;
     object-fit: contain;
     display: flex;
+    margin-bottom: 16px;
 }
 
 .products-explanation {
@@ -189,6 +190,17 @@ body {
     width: 100%;
     height: 34px;
     margin-bottom: 24px;
+    display: flex;
+    gap: 6px;
+}
+.latest-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+.latest-subtitle {
+    font-size: 24px;
+    color: #6e6e73;
+    font-weight: 700;
 }
 
 .latest-wonders-container {
@@ -215,6 +227,38 @@ body {
     background: var(--background-image) center / cover no-repeat;
     
 }
+.latest-wonders__apple-intelligence {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 700;
+    width: 160px;
+    height: 14px;
+    margin-bottom: 9px;
+    margin-top: 31px;
+    margin-left: 30px;
+    color: #B64400;
+}
+.latest-wonders__products-name {
+    width: 322px;
+    height: 32px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+    color: #1D1D1F;
+    margin-left: 30px;
+    margin-bottom: 12px;
+}
+.latest-wonders__price-info {
+    width: 322px;
+    height: 20px;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #1D1D1F;
+    margin-left: 30px;
+}
+
 
 .personalization {
     width: 100%;
@@ -227,6 +271,18 @@ body {
     width: 100%;
     height: 34px;
     margin-bottom: 24px;
+    display: flex;
+    gap: 6px;
+}
+
+.personalization-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+.personalization-subtitle {
+    font-size: 24px;
+    color: #6e6e73;
+    font-weight: 700;
 }
 
 .personalization-container {
@@ -253,6 +309,70 @@ body {
     display: flex;
     border-radius: 18px;
     background: var(--background-image) center / cover no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+.personalization-item--special {
+    display: block;
+}
+.personalization-item__text {
+    width: 257px;
+    height: 109px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 359px;
+    left: 28px;
+}
+.personalization-item__text__feature {
+    width: 257px;
+    height: 15px;
+    margin-bottom: 6px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: #B64400;
+}
+.personalization-item__text__product {
+    width: 257px;
+    height: 40px;
+    margin-bottom: 32px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: #1D1D1F;
+}
+.personalization-item__text__price {
+    width: 257px;
+    height: 16px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #1D1D1F;
+}
+.personalization-item__text--special {
+    width: 197px;
+    height: 66px;
+    margin-top: 53px;
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+    color: #1D1D1F;
+}
+.personalization-photo {
+    width: 230px;
+    height: 230px;
+    object-fit: contain;
+    margin-top: 71px;
+}
+.personalization-photo1 {
+    width: 253px;
+    height: 58px;
+    object-fit: contain;
 }
 
 .personalization-item--special {
