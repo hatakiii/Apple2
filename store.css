@@ -6,6 +6,9 @@
   /* box-sizing: border-box; */
   font-family: "Inter", serif;
 }
+
+
+
 html {
     scroll-behavior: smooth;
     background-color: #F5F5F7;
@@ -198,7 +201,7 @@ body {
 }
 
 .latest-wonders-container1 {
-    width: 5480px;
+    width: 5980px;
     height: 500px;
     display: flex;
     gap: 20px;
@@ -211,4 +214,248 @@ body {
     border-radius: 18px;
     background: var(--background-image) center / cover no-repeat;
     
+}
+
+.personalization {
+    width: 100%;
+    height: 558px;
+    margin-left: 140px;
+    margin-top: 60px;
+}
+
+.personalization-text {
+    width: 100%;
+    height: 34px;
+    margin-bottom: 24px;
+}
+
+.personalization-container {
+    width: 1640px;
+    height: 500px;
+    
+    display: flex;
+    overflow: scroll;
+    overflow-y: hidden;
+}
+
+.personalizaton-container1 {
+    width: 3730px;
+    height: 500px;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.personalization-item {
+    width: 313px;
+    height: 500px;
+    background-size: contain;
+    display: flex;
+    border-radius: 18px;
+    background: var(--background-image) center / cover no-repeat;
+}
+
+.personalization-item--special {
+    width: 400px;
+}
+
+.holiday {
+    width: 100%;
+    height: 558px;
+    margin-left: 140px;
+    margin-top: 60px;
+}
+
+.holiday-text {
+    width: 100%;
+    height: 34px;
+    margin-bottom: 24px;
+}
+
+.holiday-container {
+    width: 1640px;
+    height: 500px;
+    
+    display: flex;
+    overflow: scroll;
+    overflow-y: hidden;
+}
+
+.holiday-container1 {
+    width: 3730px;
+    height: 500px;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.holiday-item {
+    width: 313px;
+    height: 500px;
+    background-size: contain;
+    display: flex;
+    border-radius: 18px;
+    background: var(--background-image) center / cover no-repeat;
+}
+
+.holiday-item--special {
+    width: 400px;
+}
+
+/* Only at Apple (Shopping) */
+
+.shopping {
+    width: 100%;
+    height: 558px;
+    margin-left: 140px;
+    margin-top: 60px;
+}
+
+.shopping-text {
+    width: 100%;
+    height: 34px;
+    margin-bottom: 24px;
+}
+
+.shopping-container {
+    width: 1640px;
+    height: 500px;
+    
+    display: flex;
+    overflow: scroll;
+    overflow-y: hidden;
+}
+
+.shopping-container1 {
+    width: 3730px;
+    height: 500px;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.shopping-item {
+    width: 313px;
+    height: 500px;
+    background-size: contain;
+    display: flex;
+    border-radius: 18px;
+    background: var(--background-image) center / cover no-repeat;
+}
+
+.shopping-item--special {
+    width: 400px;
+}
+
+/* The Apple experience */
+.experience {
+    width: 100%;
+    height: 558px;
+    margin-left: 140px;
+    margin-top: 60px;
+}
+
+.experience-text {
+    width: 100%;
+    height: 34px;
+    margin-bottom: 24px;
+}
+
+.experience-container {
+    width: 1640px;
+    height: 500px;
+    
+    display: flex;
+    overflow: scroll;
+    overflow-y: hidden;
+}
+
+.experience-container1 {
+    width: 3730px;
+    height: 500px;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.experience-item {
+    width: 313px;
+    height: 500px;
+    background-size: contain;
+    display: flex;
+    border-radius: 18px;
+    background: var(--background-image) center / cover no-repeat;
+}
+
+.experience-item--special {
+    width: 400px;
+}
+
+/* Special Savings */
+.savings {
+    width: 100%;
+    height: 590px;
+    margin-left: 140px;
+    margin-top: 60px;
+}
+
+.savings-text {
+    width: 100%;
+    height: 66px;
+    margin-bottom: 24px;
+}
+
+.savings-container {
+    width: 1640px;
+    height: 500px;
+    
+    display: flex;
+    overflow: scroll;
+    overflow-y: hidden;
+}
+
+.savings-container1 {
+    width: 3730px;
+    height: 500px;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.savings-item {
+    width: 313px;
+    height: 500px;
+    background-size: contain;
+    display: flex;
+    border-radius: 18px;
+    background: var(--background-image) center / cover no-repeat;
+}
+
+.savings-item--special {
+    width: 400px;
+}
+
+.quick-links {
+    width: 1920px;
+    height: 96px;
+    margin-left: 140px;
+}
+
+.quick-links-text {
+    width: 100%;
+    height: 32px;
+    margin-bottom: 24px;
+}
+
+.quick-links-list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+
+.quick-links__item {
+    padding: 8px 15px;
+    border-radius: 999px;
+    background-color: #f2416b;
 }
