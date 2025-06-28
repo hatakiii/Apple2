@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
 
 * {
   margin: 0;
   padding: 0;
   /* box-sizing: border-box; */
-  font-family: "Inter", serif;
+  font-family: 'SF Pro Display', sans-serif;
+                                                
 }
 
 
@@ -43,7 +44,7 @@ body {
 
 .header__link {
     font-size: 12px;
-    font-weight: 400;
+    color: #333336;
     white-space: nowrap;
     text-decoration: none;
 }
@@ -58,6 +59,13 @@ body {
 
 .header__icon--image--menu {
     display: none;
+}
+
+.apple-logo {
+  width: 15.1px;
+  height: 18.6px;
+  object-fit: contain;
+  display: flex;
 }
 
 .ribbon {
@@ -209,7 +217,8 @@ body {
     
     display: flex;
     overflow: scroll;
-    overflow-y: hidden;
+    overflow: visible; /* allow the image to grow outside */
+    
 }
 
 .latest-wonders-container1 {
@@ -217,6 +226,8 @@ body {
     height: 500px;
     display: flex;
     gap: 20px;
+    overflow: visible; /* allow the image to grow outside */
+  position: relative; /* for proper positioning if needed */
 }
 
 .latest-wonders {
@@ -291,7 +302,10 @@ body {
     
     display: flex;
     overflow: scroll;
-    overflow-y: hidden;
+    overflow: visible;
+
+    
+    
 }
 
 .personalizaton-container1 {
@@ -300,6 +314,8 @@ body {
     gap: 20px;
     display: flex;
     justify-content: center;
+     overflow: visible; /* allow the image to grow outside */
+  
 }
 
 .personalization-item {
@@ -390,6 +406,18 @@ body {
     width: 100%;
     height: 34px;
     margin-bottom: 24px;
+    display: flex;
+    gap: 6px;
+}
+
+.holiday-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+.holiday-subtitle {
+    font-size: 24px;
+    color: #6e6e73;
+    font-weight: 700;
 }
 
 .holiday-container {
@@ -398,11 +426,12 @@ body {
     
     display: flex;
     overflow: scroll;
-    overflow-y: hidden;
+    overflow: visible;
+    
 }
 
 .holiday-container1 {
-    width: 3730px;
+    width: 3484px;
     height: 500px;
     gap: 20px;
     display: flex;
@@ -416,6 +445,70 @@ body {
     display: flex;
     border-radius: 18px;
     background: var(--background-image) center / cover no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+.holiday-item--special {
+    display: block;
+}
+.holiday-item__text {
+    width: 257px;
+    height: 109px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 359px;
+    left: 28px;
+}
+.holiday-item__text__feature {
+    width: 257px;
+    height: 15px;
+    margin-bottom: 6px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: #B64400;
+}
+.holiday-item__text__product {
+    width: 257px;
+    height: 40px;
+    margin-bottom: 32px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: #1D1D1F;
+}
+.holiday-item__text__price {
+    width: 257px;
+    height: 16px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #1D1D1F;
+}
+.holiday-item__text--special {
+    width: 197px;
+    height: 66px;
+    margin-top: 53px;
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+    color: #1D1D1F;
+}
+.holiday-photo {
+    width: 230px;
+    height: 230px;
+    object-fit: contain;
+    margin-top: 71px;
+}
+.holiday-photo1 {
+    width: 253px;
+    height: 58px;
+    object-fit: contain;
 }
 
 .holiday-item--special {
@@ -435,6 +528,18 @@ body {
     width: 100%;
     height: 34px;
     margin-bottom: 24px;
+    display: flex;
+    gap: 6px;
+}
+
+.shopping-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+.shopping-subtitle {
+    font-size: 24px;
+    color: #6e6e73;
+    font-weight: 700;
 }
 
 .shopping-container {
@@ -443,29 +548,87 @@ body {
     
     display: flex;
     overflow: scroll;
-    overflow-y: hidden;
+    overflow: visible;
 }
 
 .shopping-container1 {
-    width: 3730px;
+    width: 5000px;
     height: 500px;
     gap: 20px;
     display: flex;
     justify-content: center;
 }
 
-.shopping-item {
-    width: 313px;
+.shopping-item-large {
+    width: 480px;
     height: 500px;
     background-size: contain;
     display: flex;
+    flex-direction: column;
     border-radius: 18px;
     background: var(--background-image) center / cover no-repeat;
 }
-
-.shopping-item--special {
-    width: 400px;
+.shopping-item-large__text {
+   
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    margin-top: 50px;
+    margin-left: 30px;
 }
+.shopping-item-large__brand-name {
+    width: 131px;
+    height: 14px;
+    margin-top: 31px;
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: #6E6E73;
+}
+.shopping-item-large__text1 {
+    width: 331px;
+    height: 96px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 32px;
+    color: #1D1D1F;
+    margin-top: 9px;
+    margin-left: 30px;
+}
+
+.shopping-item-small-container {
+    width: 646px;
+    height: 500px;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.shopping-item-small {
+    width: 313px;
+    height: 240px;
+    border-radius: 18px;
+    background-color:  #FFFFFF;
+    
+    
+}
+.shopping-item-small__context {
+    margin: 0;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0;
+    color: #1D1D1F;
+    margin-left: 30px;
+}
+.shopping-item-small__context--deed {
+    margin-top: 82px;
+}
+.shopping-item-small__context--dood {
+    margin-top: 68px;
+}
+
+
 
 /* The Apple experience */
 .experience {
@@ -479,6 +642,18 @@ body {
     width: 100%;
     height: 34px;
     margin-bottom: 24px;
+    display: flex;
+    gap: 6px;
+}
+
+.experience-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+.experience-subtitle {
+    font-size: 24px;
+    color: #6e6e73;
+    font-weight: 700;
 }
 
 .experience-container {
@@ -487,11 +662,11 @@ body {
     
     display: flex;
     overflow: scroll;
-    overflow-y: hidden;
+    overflow: visible;
 }
 
 .experience-container1 {
-    width: 3730px;
+    width: 5000px;
     height: 500px;
     gap: 20px;
     display: flex;
@@ -499,17 +674,60 @@ body {
 }
 
 .experience-item {
-    width: 313px;
+    width: 480px;
     height: 500px;
     background-size: contain;
     display: flex;
+    flex-direction: column;
     border-radius: 18px;
     background: var(--background-image) center / cover no-repeat;
 }
 
-.experience-item--special {
-    width: 400px;
+.experience-item-large__text {
+   
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    margin-top: 50px;
+    margin-left: 30px;
 }
+.experience-item-large__brand-name {
+    width: 131px;
+    height: 14px;
+    margin-top: 31px;
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: #6E6E73;
+}
+.experience-item-large__brand-name--white {
+    color: #FFFFFF;
+}
+.experience-item-large__text1 {
+    width: 331px;
+    /* height: 96px; */
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 32px;
+    color: #1D1D1F;
+    margin-top: 9px;
+    margin-left: 30px;
+}
+.--white {
+    color: #FFFFFF;
+}
+.experience-item-large__text2 {
+    width: 259px;
+    height: 41px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #1D1D1F;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
 
 /* Special Savings */
 .savings {
@@ -521,21 +739,35 @@ body {
 
 .savings-text {
     width: 100%;
-    height: 66px;
-    margin-bottom: 24px;
+    height: 68px;
+    margin-bottom: 22px;
 }
-
+.savings-text1 {
+    width: 831px; 
+    height: 34px; 
+    gap: 6px; 
+    display: flex;
+}
+.savings-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+.savings-subtitle {
+    font-size: 24px;
+    color: #6e6e73;
+    font-weight: 700;
+}
 .savings-container {
     width: 1640px;
     height: 500px;
     
     display: flex;
     overflow: scroll;
-    overflow-y: hidden;
+    overflow: visible;
 }
 
 .savings-container1 {
-    width: 3730px;
+    width: 5000px;
     height: 500px;
     gap: 20px;
     display: flex;
@@ -543,22 +775,53 @@ body {
 }
 
 .savings-item {
-    width: 313px;
+    width: 400px;
     height: 500px;
     background-size: contain;
     display: flex;
+    flex-direction: column;
     border-radius: 18px;
     background: var(--background-image) center / cover no-repeat;
 }
 
-.savings-item--special {
-    width: 400px;
+.savings-item-large__brand-name {
+    width: 150px;
+    height: 14px;
+    margin-top: 31px;
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: #6E6E73;
+}
+
+.savings-item-large__text1 {
+    width: 331px;
+    /* height: 96px; */
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 32px;
+    color: #1D1D1F;
+    margin-top: 9px;
+    margin-left: 30px;
+}
+.savings-item-large__text2 {
+    width: 259px;
+    /* height: 41px; */
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #1D1D1F;
+    margin-top: 10px;
+    margin-left: 30px;
 }
 
 .quick-links {
     width: 1920px;
     height: 96px;
     margin-left: 140px;
+    margin-bottom: 100px;
+    margin-top: 60px;
 }
 
 .quick-links-text {
@@ -571,11 +834,77 @@ body {
     display: flex;
     align-items: center;
     list-style-type: none;
+    gap: 12px;
+    
 }
 
 
 .quick-links__item {
     padding: 8px 15px;
     border-radius: 999px;
-    background-color: #f2416b;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1D1D1F;
+    background-color: transparent;
+    border-style: solid;
+   border-color: #1D1D1F;
+   border-width: 1px;
+   gap: 10px;
+    
 }
+
+.ne {
+    width: 8px;
+    height: 8px;
+    object-fit: contain;
+}
+
+.quick-links__item::after {
+   content: url(images/icons/ne-arrow.png);
+   width: 8px;
+   height: 8px;
+   object-fit: contain;
+   margin-left: 8px;
+}
+/* Hover */
+.quick-links__item:hover {
+    background-color: #1D1D1F;
+    color: #FFFFFF;
+}
+.latest-wonders:hover{
+    transform: scale(1.02); /* 3% larger */
+  transition: transform 0.3s ease; /* smooth animation */
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+}
+.personalization-item:hover{
+    transform: scale(1.02); /* 3% larger */
+  transition: transform 0.3s ease; /* smooth animation */
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+}
+.holiday-item:hover{
+    transform: scale(1.02); /* 3% larger */
+  transition: transform 0.3s ease; /* smooth animation */
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+}
+.shopping-item-large:hover{
+    transform: scale(1.02); /* 3% larger */
+  transition: transform 0.3s ease; /* smooth animation */
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+}
+.shopping-item-small:hover{
+    transform: scale(1.02); /* 3% larger */
+  transition: transform 0.3s ease; /* smooth animation */
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+}
+.experience-item:hover{
+    transform: scale(1.02); /* 3% larger */
+  transition: transform 0.3s ease; /* smooth animation */
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+}
+.savings-item:hover{
+    transform: scale(1.02); /* 3% larger */
+  transition: transform 0.3s ease; /* smooth animation */
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
