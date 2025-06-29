@@ -311,7 +311,7 @@ body {
 /* Slider Section */
 .slider-wrapper {
   width: 100%;
-  height: var(--height);
+  height: auto;
   padding-top: 12px;
   --width: 417px;
   --height: 236px;
@@ -320,6 +320,7 @@ body {
   overflow-y: hidden;
   margin-top: 12px;
   margin-bottom: 56px;
+  scroll-snap-type: x mandatory;
 }
 
 .slider {
