@@ -13,7 +13,14 @@ html {
 }
 
 body {
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
+  /* margin: auto; */
+}
+
+main {
+  margin: auto;
+  /* width: 92.7%;
+  margin-left: 7.3%; */
 }
 
 .center {
@@ -83,7 +90,7 @@ body {
 .store-container {
   display: flex;
   padding: 80px 0;
-  margin-left: 140px;
+  
   align-items: center;
   justify-content: space-between;
 }
@@ -158,7 +165,7 @@ body {
   width: 100%;
   height: 146px;
   display: flex;
-  margin-left: 140px;
+  
   margin-bottom: 60px;
 }
 
@@ -188,7 +195,7 @@ body {
 .latest {
   width: 100%;
   height: 558px;
-  margin-left: 140px;
+  
 }
 
 .latest-text {
@@ -268,7 +275,7 @@ body {
 .personalization {
   width: 100%;
   height: 558px;
-  margin-left: 140px;
+  
   margin-top: 60px;
 }
 
@@ -387,7 +394,7 @@ body {
 .holiday {
   width: 100%;
   height: 558px;
-  margin-left: 140px;
+  
   margin-top: 60px;
 }
 
@@ -508,7 +515,7 @@ body {
 .shopping {
   width: 100%;
   height: 558px;
-  margin-left: 140px;
+  
   margin-top: 60px;
 }
 
@@ -540,7 +547,7 @@ body {
 }
 
 .shopping-container1 {
-  width: 5000px;
+  width: 3146px;
   height: 500px;
   gap: 20px;
   display: flex;
@@ -617,7 +624,7 @@ body {
 .experience {
   width: 100%;
   height: 558px;
-  margin-left: 140px;
+  
   margin-top: 60px;
 }
 
@@ -649,7 +656,7 @@ body {
 }
 
 .experience-container1 {
-  width: 5000px;
+  width: 4480px;
   height: 500px;
   gap: 20px;
   display: flex;
@@ -714,7 +721,7 @@ body {
 .savings {
   width: 100%;
   height: 590px;
-  margin-left: 140px;
+  
   margin-top: 60px;
 }
 
@@ -748,7 +755,7 @@ body {
 }
 
 .savings-container1 {
-  width: 5000px;
+  width: 2500px;
   height: 500px;
   gap: 20px;
   display: flex;
@@ -800,7 +807,7 @@ body {
 .quick-links {
   width: 1920px;
   height: 96px;
-  margin-left: 140px;
+  
   margin-bottom: 100px;
   margin-top: 60px;
 }
@@ -879,7 +886,7 @@ body {
   .experience,
   .savings,
   .quick-links {
-    margin-left: 70px;
+    /* margin-left: 70px; */
   }
 
   .header__link {
@@ -900,5 +907,21 @@ body {
   .ribbon,
   .store-support {
     display: none;
+  }
+}
+@media (min-width: 1440px) {
+  main {
+    margin-left: 140px;
+  }
+}
+@media (min-width: 981px) and (max-width: 1439px) {
+  main {
+    margin-left: calc(25.65vw - 229.39px);
+  }
+}
+
+@media (max-width: 980px) {
+  main {
+    margin-left: 22px;
   }
 }

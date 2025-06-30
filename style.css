@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  max-width: 1920px;
+  /* max-width: 1920px; */
   margin: auto;
   overflow-x: hidden;
 }
@@ -147,20 +147,26 @@ body {
   background-color: transparent;
 }
 
+.button--secondary:hover {
+  background-color: #2997ff;
+  color: white;
+}
+
 /* Product Section */
 .product-container {
   gap: 12px;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  
+  margin-left: 12px;
+  margin-right: 12px;
   margin-bottom: 12px;
   /* grid-auto-rows: 580px;
   grid-template-columns: repeat(2, 1fr); */
 }
 
 .product {
-  width: calc(50% - 6px);
+  width: calc(50% - 18px);
   height: 580px;
   display: flex;
   text-align: center;
@@ -321,6 +327,7 @@ body {
   margin-top: 12px;
   margin-bottom: 56px;
   scroll-snap-type: x mandatory;
+  position: relative;
 }
 
 .slider {
@@ -359,7 +366,6 @@ body {
   overflow: hidden;
   margin-left: 15px;
   border-radius: 8px;
-  margin-bottom: 20px;
 }
 
 
@@ -378,11 +384,14 @@ body {
 
 .slider-caption {
   left: 15px;
-  bottom: 30px;
+  bottom: 20px;
   color: (--color);
   font-weight: bold;
   position: absolute;
 } 
+
+
+
 
 
 @media (max-width: 1024px) {
