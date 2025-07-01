@@ -58,13 +58,6 @@ body {
   display: none;
 }
 
-.apple-logo {
-  width: 15.1px;
-  height: 18.6px;
-  object-fit: contain;
-  display: flex;
-}
-
 /* Banner Section */
 .donation-banner {
   font-size: 14px;
