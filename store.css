@@ -114,12 +114,17 @@ main {
 .store-title {
   font-size: 48px;
   font-weight: 700;
+  flex-shrink: 0;
+  white-space: nowrap;
+
 }
 
 .store-subtitle {
   color: #6e6e73;
   font-size: 44px;
   font-weight: 700;
+  white-space: nowrap;
+  
 }
 
 .store-support {
@@ -208,11 +213,13 @@ main {
 .latest-title {
   font-size: 24px;
   font-weight: 700;
+  white-space: nowrap;
 }
 .latest-subtitle {
   font-size: 24px;
   color: #6e6e73;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .latest-wonders-container {
@@ -291,11 +298,13 @@ main {
 .personalization-title {
   font-size: 24px;
   font-weight: 700;
+  white-space: nowrap;
 }
 .personalization-subtitle {
   font-size: 24px;
   color: #6e6e73;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .personalization-container {
@@ -411,11 +420,13 @@ main {
 .holiday-title {
   font-size: 24px;
   font-weight: 700;
+  white-space: nowrap;
 }
 .holiday-subtitle {
   font-size: 24px;
   color: #6e6e73;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .holiday-container {
@@ -533,11 +544,13 @@ main {
 .shopping-title {
   font-size: 24px;
   font-weight: 700;
+  white-space: nowrap;
 }
 .shopping-subtitle {
   font-size: 24px;
   color: #6e6e73;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .shopping-container {
@@ -644,11 +657,13 @@ main {
 .experience-title {
   font-size: 24px;
   font-weight: 700;
+  white-space: nowrap;
 }
 .experience-subtitle {
   font-size: 24px;
   color: #6e6e73;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .experience-container {
@@ -750,6 +765,7 @@ main {
   font-size: 24px;
   color: #6e6e73;
   font-weight: 700;
+  white-space: nowrap;
 }
 .savings-container {
   width: 100vw;
@@ -895,17 +911,47 @@ main {
 }
 @media (min-width: 1440px) {
   main {
-    margin-inline: 80px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
   }
 }
 @media (min-width: 981px) and (max-width: 1439px) {
   main {
-    margin-inline: calc(22px + (58 * ((100vw - 981px) / 459)));
+    margin-left: clamp(30px, calc(6vw + 3px), 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
   }
 }
 
 @media (max-width: 980px) {
   main {
-    margin-inline: 22px;
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 980px) {
+  main {
+    margin-left: calc(14px + (16 * ((100vw - 490px) / 490)));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+  }
+}
+
+
+
+@media (max-width: 400px){
+  main {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
   }
 }
