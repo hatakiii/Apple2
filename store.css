@@ -11,10 +11,11 @@
 
 html {
   background-color: #f5f5f7;
+  overflow-x: scroll;
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: scroll;
   /* margin: auto; */
 }
 
@@ -22,6 +23,7 @@ main {
   margin: auto;
   /* width: 92.7%;
   margin-left: 7.3%; */
+  overflow-x: scroll;
 }
 
 .center {
@@ -128,6 +130,7 @@ main {
   flex-direction: column;
   width: 226px;
   height: 100px;
+  margin-right: 140px;
 }
 
 .support-item {
@@ -160,15 +163,22 @@ main {
 .link {
   text-decoration: none;
 }
+.cards-house-container {
+  width: 100%;
+  height: auto ; 
+  overflow-x: scroll;
+  margin-bottom: 60px;
+  margin-right: 24px;
+}
+
+
 
 .cards-house {
-  width: 100%;
+  width: 1756px;
   height: auto ; 
   /* 146px */
   display: flex;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-  margin-bottom: 60px;
+  gap: 12px;
 }
 
 .cards-house__products {
@@ -177,7 +187,9 @@ main {
   flex-direction: column;
   flex-shrink: 0;
   scroll-snap-align: start;
-
+}
+.cards-house__products--11 {
+  margin-right: 140px;
 }
 
 .products-image {
@@ -229,7 +241,7 @@ main {
   overflow-x: scroll;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
-  /* overflow: visible;  */
+ 
 }
 
 .latest-wonders-container1 {
@@ -237,7 +249,7 @@ main {
   height: 500px;
   display: flex;
   gap: 20px;
-  position: relative; /* for proper positioning if needed */
+  
 }
 
 .latest-wonders {
@@ -889,9 +901,9 @@ main {
 .shopping-item-small:hover,
 .experience-item:hover,
 .savings-item:hover {
-  transform: scale(1.02); 
+  transform: scale(1.005); 
   transition: transform 0.3s ease; /* smooth animation */
-  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 2px 4px 12px rgba(0, 255, 0, 0.15), -2px -4px 12px rgba(0, 255, 0, 0.15);
 }
 
 @media (max-width: 1024px) {
@@ -933,7 +945,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    overflow: hidden;
+    overflow: scroll;
   }
 }
 
@@ -943,8 +955,9 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    overflow: hidden;
+    overflow: scroll;
   }
+
 }
 
 
@@ -954,7 +967,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    overflow: hidden;
+    overflow: scroll;
   }
 }
 
@@ -964,7 +977,19 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: scroll;
+  }
+  .store-container, 
+  .latest-text, 
+  .personalization-text, 
+  .holiday-text, 
+  .shopping-text, 
+  .experience-text, 
+  .savings-text {
     overflow: hidden;
+  }
+  .store-header {
+    display: flex;
   }
 }
 
@@ -974,7 +999,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    overflow: hidden;
+    overflow: scroll;
     width: 100vw;
   }
   .store-support,
@@ -998,8 +1023,18 @@ main {
   .savings-title {
     margin-left: 25px;
   }
+  .store-container, 
+  .latest-text, 
+  .personalization-text, 
+  .holiday-text, 
+  .shopping-text, 
+  .experience-text, 
   .savings-text {
     height: 34px;
+    overflow: hidden;
+  }
+  .store-header {
+    display: flex;
   }
 
 }
