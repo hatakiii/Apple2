@@ -8,12 +8,14 @@
 
 html {
   scroll-behavior: smooth;
+  position: relative;
 }
 
 body {
   /* max-width: 1920px; */
   margin: auto;
   overflow-x: hidden;
+  
 }
 
 
@@ -315,6 +317,7 @@ body {
   --width: 417px;
   --height: 236px;
   --quantity: 10;
+  --gap: 16px;
   overflow-x:  scroll;
   overflow-y: hidden;
   margin-top: 12px;
@@ -327,8 +330,9 @@ body {
   width: 100%;
   height: var(--height);
   display: flex;
+  gap: var(--gap);
  
-  min-width: calc(var(--width) * var(--quantity));
+  min-width: calc(var(--width) * var(--quantity) + var(--gap) * var(--quantity));
   
 }
 
@@ -384,6 +388,17 @@ body {
   position: absolute;
 } 
 
+.play-button {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  border: 0;
+}
+
+.play-button__image {
+  object-fit: contain;
+  border-radius: 50%;
+}
 
 
 
