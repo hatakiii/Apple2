@@ -1,9 +1,9 @@
-@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'SF Pro Display', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 html {
@@ -84,11 +84,11 @@ body {
 }
 
 .hero__container--iphone-16-pro {
-  background-image: url("./images/hero/iphone-16-pro-desktop.jpg");
+  background-image: url("./images/hero/iphone-16-pro-1920web.png");
 }
 
 .hero__container--iphone-16 {
-  background-image: url("./images/hero/iphone-16-desktop.jpg");
+  background-image: url("./images/hero/iphone-16-1920web.png");
 }
 
 .hero__container--gift-magic {
@@ -100,6 +100,8 @@ body {
   font-size: 52px;
   color: #f5f5f7;
   font-weight: 600;
+  line-height: 60px;
+  letter-spacing: -0.28px;
 }
 
 .hero-title--dark {
@@ -111,6 +113,9 @@ body {
   color: #f5f5f7;
   font-weight: 400;
   margin-block: 16px 20px;
+  line-height: 32px;
+  letter-spacing: 0;
+
 }
 
 .hero-subhead--dark {
@@ -527,6 +532,7 @@ body {
   .hero-title {
     font-size: 30px;
     font-weight: 700;
+    line-height: 36px;
   }
 
   .hero-buttons,
