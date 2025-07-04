@@ -20,7 +20,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 255, 0.022);
+    background: rgba(0, 0, 255, 0.009);
 }
 body {
   overflow-x: hidden;
