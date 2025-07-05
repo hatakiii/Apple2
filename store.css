@@ -19,9 +19,9 @@ html {
     background: transparent;  
 }
 
-::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 255, 0.009);
-}
+/* ::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 255, 0.08);
+} */
 body {
   overflow-x: hidden;
   /* margin: auto; */
@@ -267,6 +267,7 @@ body {
   background-size: contain;
   border-radius: 18px;
   scroll-snap-align: center;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
   background: var(--background-image) center / cover no-repeat;
 }
 .latest-wonders__apple-intelligence {
@@ -362,6 +363,7 @@ body {
   align-items: center;
   background-color: #ffffff;
   scroll-snap-align: center;
+  box-shadow: 2px 4px 12px 0px #00000014;
 }
 .personalization-item--special {
   display: block;
@@ -488,6 +490,7 @@ body {
   align-items: center;
   background-color: #ffffff;
   scroll-snap-align: center;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
 }
 .holiday-item--special {
   display: block;
@@ -611,6 +614,7 @@ body {
   flex-direction: column;
   border-radius: 18px;
   scroll-snap-align: center;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
   background: var(--background-image) center / cover no-repeat;
 }
 .shopping-item-large__text {
@@ -654,6 +658,7 @@ body {
   height: 237.6px;
   border-radius: 18px;
   background-color: #ffffff;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
 }
 .shopping-item-small__context {
   margin: 0;
@@ -728,6 +733,7 @@ body {
   flex-direction: column;
   border-radius: 18px;
   scroll-snap-align: center;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
   background: var(--background-image) center / cover no-repeat;
 }
 
@@ -833,6 +839,7 @@ body {
   flex-direction: column;
   border-radius: 18px;
   scroll-snap-align: center;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
   background: var(--background-image) center / cover no-repeat;
 }
 
@@ -927,8 +934,8 @@ body {
 .savings-item:hover {
   transform: scale(1.0101);
   transition: transform 0.3s ease; /* smooth animation */
-  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08),
-    -2px -4px 12px rgba(0, 0, 0, 0.08);
+  /* box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08),
+    -2px -4px 12px rgba(0, 0, 0, 0.08); */
 }
 
 @media (max-width: 1024px) {
